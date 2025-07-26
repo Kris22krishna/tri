@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+<head>
+    <title>Quiz Summary</title>
+</head>
+<body>
+    <h2>🎉 Quiz Completed!</h2>
+    <p>✅ Correct Answers: {{ correct }}/{{ total }}</p>
+    <p>⏱️ Total Time: {{ total_time | round(2) }} seconds</p>
+    <p>🧠 Avg Time per Question: {{ avg_time | round(2) }} seconds</p>
+    <h3>Time Chart:</h3>
+    <img src="{{ url_for('chart') }}" alt="Time Chart">
+</body>
+</html>
